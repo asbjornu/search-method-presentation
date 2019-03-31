@@ -1,8 +1,8 @@
 {
-  "name": "reveal.js",
-  "version": "3.7.0",
-  "description": "The HTML Presentation Framework",
-  "homepage": "http://revealjs.com",
+  "name": "search-method-presentation",
+  "version": "1.0.0",
+  "description": "Presentation of the SEARCH HTTP method for the 2019 HTTP Workshop.",
+  "homepage": "https://asbjornu.github.io/search-method-presentation",
   "subdomain": "revealjs",
   "main": "js/reveal.js",
   "scripts": {
@@ -11,13 +11,13 @@
     "build": "grunt"
   },
   "author": {
-    "name": "Hakim El Hattab",
-    "email": "hakim.elhattab@gmail.com",
-    "web": "http://hakim.se"
+    "name": "Asbjørn Ulsberg",
+    "email": "asbjorn@ulsberg.no",
+    "web": "https://asbjor.nu"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/hakimel/reveal.js.git"
+    "url": "git://github.com/asbjornu/search-method-presentation.git"
   },
   "engines": {
     "node": ">=4.0.0"
