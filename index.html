@@ -75,6 +75,20 @@ GET /_search HTTP/1.1
 						Dangerous and incompatible with reverse proxy caching.
                     </aside>
 				</section>
+
+				<section>
+					<pre><code data-trim data-noescape>
+SEARCH /search HTTP/1.1
+ETag: df3049812
+
+… 
+					</code></pre>
+
+					<aside class="notes">
+						ETag for SEARCH to uniquely identify requests.
+                    </aside>
+				</section>
+
 				<section>
 					<ul>
 						<li><a href="https://twitter.com/jasnell">@jasnell</a> has written a <a href="https://tools.ietf.org/html/draft-snell-search-method-00">draft</a></li>
