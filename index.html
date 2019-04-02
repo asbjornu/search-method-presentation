@@ -51,6 +51,31 @@ Content-Type: application/graphql
 				</section>
 
 				<section>
+					<h2>Elasticsearch uses <code>GET</code> with body for queries</h2>
+					<pre><code data-trim>
+GET /_search HTTP/1.1
+
+{
+  "query": { 
+    "bool": { 
+      "must": [
+        { "match": { "title":   "Search"        }}, 
+        { "match": { "content": "Elasticsearch" }}  
+      ],
+      "filter": [ 
+        { "term":  { "status": "published" }}, 
+        { "range": { "publish_date": { "gte": "2015-01-01" }}} 
+      ]
+    }
+  }
+}						
+					</code></pre>
+
+					<aside class="notes">
+						Dangerous and incompatible with reverse proxy caching.
+                    </aside>
+				</section>
+				<section>
 					<ul>
 						<li><a href="https://twitter.com/jasnell">@jasnell</a> has written a <a href="https://tools.ietf.org/html/draft-snell-search-method-00">draft</a></li>
 						<li>GraphQL uses <code>POST</code> for queries</li>
