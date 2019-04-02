@@ -29,6 +29,28 @@
 				</section>
 
 				<section>
+					<h2>GraphQL uses <code>POST</code> for queries</h2>
+					<pre><code data-trim data-noescape>
+POST /query HTTP/1.1
+Content-Type: application/graphql
+
+{
+  <span class="hljs-attribute">hero</span> {
+    <span class="hljs-attribute">friends</span> {
+      <span class="hljs-attribute">id</span>
+      <span class="hljs-attribute">name</span>
+      <span class="hljs-attribute">height</span>
+    }
+  }
+}						
+					</code></pre>
+
+					<aside class="notes">
+						Bad for caching.
+                    </aside>
+				</section>
+
+				<section>
 					<ul>
 						<li><a href="https://twitter.com/jasnell">@jasnell</a> has written a <a href="https://tools.ietf.org/html/draft-snell-search-method-00">draft</a></li>
 						<li>GraphQL uses <code>POST</code> for queries</li>
